@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM64" />
+  </Configurations>
+  <Project Path="CalculatorUI/CalculatorUI.csproj" Id="5230ec57-b9ec-48fe-add5-f00b84496d61">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+  </Project>
+</Solution>
