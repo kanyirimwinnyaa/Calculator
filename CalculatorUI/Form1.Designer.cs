@@ -47,8 +47,13 @@
             this.btnPercentage = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnClearAll = new System.Windows.Forms.Button();
-            this.textBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox = new System.Windows.Forms.TextBox();
+            this.btnToThePowerOf = new System.Windows.Forms.Button();
+            this.btnSquareRoot = new System.Windows.Forms.Button();
+            this.btnSquared = new System.Windows.Forms.Button();
+            this.btnCubed = new System.Windows.Forms.Button();
+            this.btnPi = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn0
@@ -277,15 +282,6 @@
             this.btnClearAll.UseVisualStyleBackColor = false;
             this.btnClearAll.Click += new System.EventHandler(this.btnClearAll_Click);
             // 
-            // textBox
-            // 
-            this.textBox.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox.Location = new System.Drawing.Point(87, 83);
-            this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(183, 31);
-            this.textBox.TabIndex = 20;
-            this.textBox.TextChanged += new System.EventHandler(this.textBox_TextChanged);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -303,7 +299,6 @@
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(302, 418);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox);
             this.Controls.Add(this.btnDivide);
             this.Controls.Add(this.btnPercentage);
             this.Controls.Add(this.btnClear);
