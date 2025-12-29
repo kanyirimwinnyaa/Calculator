@@ -1,5 +1,8 @@
-﻿namespace CalculatorUI
+﻿using System.Windows.Forms;
+
+namespace CalculatorUI
 {
+
     partial class Form1
     {
         /// <summary>
@@ -84,7 +87,7 @@
             // 
             this.btnEquals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnEquals.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEquals.Location = new System.Drawing.Point(215, 337);
+            this.btnEquals.Location = new System.Drawing.Point(278, 335);
             this.btnEquals.Name = "btnEquals";
             this.btnEquals.Size = new System.Drawing.Size(57, 45);
             this.btnEquals.TabIndex = 3;
@@ -286,18 +289,94 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(83, 26);
+            this.label1.Location = new System.Drawing.Point(111, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 33);
             this.label1.TabIndex = 21;
             this.label1.Text = "Calculator";
+            // 
+            // textBox
+            // 
+            this.textBox.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox.Location = new System.Drawing.Point(89, 96);
+            this.textBox.Name = "textBox";
+            this.textBox.ReadOnly = true;
+            this.textBox.Size = new System.Drawing.Size(246, 31);
+            this.textBox.TabIndex = 23;
+            this.textBox.TextChanged += new System.EventHandler(this.textBox_TextChanged_1);
+            // 
+            // btnToThePowerOf
+            // 
+            this.btnToThePowerOf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnToThePowerOf.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToThePowerOf.Location = new System.Drawing.Point(215, 337);
+            this.btnToThePowerOf.Name = "btnToThePowerOf";
+            this.btnToThePowerOf.Size = new System.Drawing.Size(57, 45);
+            this.btnToThePowerOf.TabIndex = 24;
+            this.btnToThePowerOf.Text = "^";
+            this.btnToThePowerOf.UseVisualStyleBackColor = false;
+            this.btnToThePowerOf.Click += new System.EventHandler(this.btn_click);
+            // 
+            // btnSquareRoot
+            // 
+            this.btnSquareRoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSquareRoot.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSquareRoot.Location = new System.Drawing.Point(278, 133);
+            this.btnSquareRoot.Name = "btnSquareRoot";
+            this.btnSquareRoot.Size = new System.Drawing.Size(57, 45);
+            this.btnSquareRoot.TabIndex = 25;
+            this.btnSquareRoot.Text = "√";
+            this.btnSquareRoot.UseVisualStyleBackColor = false;
+            this.btnSquareRoot.Click += new System.EventHandler(this.btn_click);
+            // 
+            // btnSquared
+            // 
+            this.btnSquared.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSquared.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSquared.Location = new System.Drawing.Point(278, 184);
+            this.btnSquared.Name = "btnSquared";
+            this.btnSquared.Size = new System.Drawing.Size(57, 45);
+            this.btnSquared.TabIndex = 26;
+            this.btnSquared.Text = "x²";
+            this.btnSquared.UseVisualStyleBackColor = false;
+            this.btnSquared.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btnCubed
+            // 
+            this.btnCubed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnCubed.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCubed.Location = new System.Drawing.Point(278, 235);
+            this.btnCubed.Name = "btnCubed";
+            this.btnCubed.Size = new System.Drawing.Size(57, 45);
+            this.btnCubed.TabIndex = 27;
+            this.btnCubed.Text = "x³";
+            this.btnCubed.UseVisualStyleBackColor = false;
+            this.btnCubed.Click += new System.EventHandler(this.btnCubed_Click);
+            // 
+            // btnPi
+            // 
+            this.btnPi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnPi.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPi.Location = new System.Drawing.Point(278, 288);
+            this.btnPi.Name = "btnPi";
+            this.btnPi.Size = new System.Drawing.Size(57, 45);
+            this.btnPi.TabIndex = 28;
+            this.btnPi.Text = "π";
+            this.btnPi.UseVisualStyleBackColor = false;
+            this.btnPi.Click += new System.EventHandler(this.btn_click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(302, 418);
+            this.ClientSize = new System.Drawing.Size(350, 396);
+            this.Controls.Add(this.btnPi);
+            this.Controls.Add(this.btnCubed);
+            this.Controls.Add(this.btnSquared);
+            this.Controls.Add(this.btnSquareRoot);
+            this.Controls.Add(this.btnToThePowerOf);
+            this.Controls.Add(this.textBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDivide);
             this.Controls.Add(this.btnPercentage);
@@ -348,8 +427,13 @@
         private System.Windows.Forms.Button btnPercentage;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnClearAll;
-        private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox;
+        private System.Windows.Forms.Button btnToThePowerOf;
+        private System.Windows.Forms.Button btnSquareRoot;
+        private System.Windows.Forms.Button btnSquared;
+        private System.Windows.Forms.Button btnCubed;
+        private System.Windows.Forms.Button btnPi;
     }
 }
 
