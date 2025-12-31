@@ -57,6 +57,7 @@ namespace CalculatorUI
             this.btnSquared = new System.Windows.Forms.Button();
             this.btnCubed = new System.Windows.Forms.Button();
             this.btnPi = new System.Windows.Forms.Button();
+            this.btnOn_Off = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn0
@@ -365,12 +366,25 @@ namespace CalculatorUI
             this.btnPi.UseVisualStyleBackColor = false;
             this.btnPi.Click += new System.EventHandler(this.btn_click);
             // 
+            // btnOn_Off
+            // 
+            this.btnOn_Off.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnOn_Off.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOn_Off.Location = new System.Drawing.Point(258, 12);
+            this.btnOn_Off.Name = "btnOn_Off";
+            this.btnOn_Off.Size = new System.Drawing.Size(77, 32);
+            this.btnOn_Off.TabIndex = 29;
+            this.btnOn_Off.Text = "ON/OFF";
+            this.btnOn_Off.UseVisualStyleBackColor = false;
+            this.btnOn_Off.Click += new System.EventHandler(this.btnOn_Off_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(350, 396);
+            this.Controls.Add(this.btnOn_Off);
             this.Controls.Add(this.btnPi);
             this.Controls.Add(this.btnCubed);
             this.Controls.Add(this.btnSquared);
@@ -434,6 +448,7 @@ namespace CalculatorUI
         private System.Windows.Forms.Button btnSquared;
         private System.Windows.Forms.Button btnCubed;
         private System.Windows.Forms.Button btnPi;
+        private Button btnOn_Off;
     }
 }
 
