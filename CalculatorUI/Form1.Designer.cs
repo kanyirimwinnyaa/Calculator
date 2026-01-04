@@ -31,6 +31,7 @@ namespace CalculatorUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btn0 = new System.Windows.Forms.Button();
             this.btnDot = new System.Windows.Forms.Button();
             this.btnEquals = new System.Windows.Forms.Button();
@@ -383,7 +384,7 @@ namespace CalculatorUI
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(350, 396);
+            this.ClientSize = new System.Drawing.Size(360, 399);
             this.Controls.Add(this.btnOn_Off);
             this.Controls.Add(this.btnPi);
             this.Controls.Add(this.btnCubed);
@@ -412,6 +413,7 @@ namespace CalculatorUI
             this.Controls.Add(this.btnDot);
             this.Controls.Add(this.btn0);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
