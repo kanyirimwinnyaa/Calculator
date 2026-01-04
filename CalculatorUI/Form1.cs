@@ -62,7 +62,7 @@ namespace CalculatorUI
                     {
                         double ans = result / 100.0;
                         textBox.Text = ans.ToString();
-                        textBox.Text = "%";
+                        textBox.Text += "%";
                         return;
                     }
                 }
